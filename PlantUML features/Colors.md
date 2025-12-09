@@ -1,0 +1,237 @@
+# Colors
+
+## Hex Codes and Pre-defined Colours
+
+Any Color hex code can be used e.g. "123456". See
+<https://www.google.com/search?q=color+picker>
+
+Alternatively, a color name can be used e.g. "blue"
+
+Below is a procedure to show the colours/colors (depending on which part
+of the world you're in) This uses the colour parameter
+
+- as an alias (so we can draw different versions of the rectangle)
+- as a \<\<stereo\>\> (so we can apply skinparams to that rectangle
+  only)
+
+
+> This was inspired by https://plantuml-documentation.readthedocs.io/en/latest/formatting/color-names.html which is a whole lot prettier than the version here.
+> The main purpose here was to show how this can be done with a procedure.
+> If you're feeling playful, go make a pretty version with a procedure and let me know so I can update this guide and give you credit.
+
+
+> [<img src="../res/play.png" width="40" alt="playbuttoncolor1" />](http://www.plantuml.com/plantuml/uml/SoWkIImgAStDuKhEpyalAkPoICrB0N81)
+> Press to play around with this diagram source online.
+
+
+
+![](/PlantUML%20features/color/1.2.png)
+
+
+
+
+```
+@startuml
+
+
+!unquoted procedure $DrawColor($colour)
+
+    skinparam rectangle {
+            backgroundColor<<$colour>> $colour
+            borderColor<<$colour>> $colour
+            shadowing<<$colour>> true
+            BorderThickness<<$colour>> 1
+        }
+
+    rectangle $colour <<$colour>> as "<color:$colour></color>"
+
+!endprocedure
+
+package HexCodes {
+$DrawColor("00ff00")
+$DrawColor("ff0000")
+$DrawColor("0000ff")
+$DrawColor("123456")
+$DrawColor("654321")
+$DrawColor("165432")
+$DrawColor("ff22ff")
+}
+
+package Colours {
+$DrawColor("APPLICATION")
+$DrawColor("AliceBlue")
+$DrawColor("AntiqueWhite")
+$DrawColor("Aqua")
+$DrawColor("Aquamarine")
+$DrawColor("Azure")
+$DrawColor("BUSINESS")
+$DrawColor("Beige")
+$DrawColor("Bisque")
+$DrawColor("Black")
+$DrawColor("BlanchedAlmond")
+$DrawColor("Blue")
+$DrawColor("BlueViolet")
+$DrawColor("Brown")
+$DrawColor("BurlyWood")
+$DrawColor("CadetBlue")
+$DrawColor("Chartreuse")
+$DrawColor("Chocolate")
+$DrawColor("Coral")
+$DrawColor("CornflowerBlue")
+$DrawColor("Cornsilk")
+$DrawColor("Crimson")
+$DrawColor("Cyan")
+$DrawColor("DarkBlue")
+$DrawColor("DarkCyan")
+$DrawColor("DarkGoldenRod")
+$DrawColor("DarkGray")
+$DrawColor("DarkGreen")
+$DrawColor("DarkGrey")
+$DrawColor("DarkKhaki")
+$DrawColor("DarkMagenta")
+$DrawColor("DarkOliveGreen")
+$DrawColor("DarkOrchid")
+$DrawColor("DarkRed")
+$DrawColor("DarkSalmon")
+$DrawColor("DarkSeaGreen")
+$DrawColor("DarkSlateBlue")
+$DrawColor("DarkSlateGray")
+$DrawColor("DarkSlateGrey")
+$DrawColor("DarkTurquoise")
+$DrawColor("DarkViolet")
+$DrawColor("Darkorange")
+$DrawColor("DeepPink")
+$DrawColor("DeepSkyBlue")
+$DrawColor("DimGray")
+$DrawColor("DimGrey")
+$DrawColor("DodgerBlue")
+$DrawColor("FireBrick")
+$DrawColor("FloralWhite")
+$DrawColor("ForestGreen")
+$DrawColor("Fuchsia")
+$DrawColor("Gainsboro")
+$DrawColor("GhostWhite")
+$DrawColor("Gold")
+$DrawColor("GoldenRod")
+$DrawColor("Gray")
+$DrawColor("Green")
+$DrawColor("GreenYellow")
+$DrawColor("Grey")
+$DrawColor("HoneyDew")
+$DrawColor("HotPink")
+$DrawColor("IMPLEMENTATION")
+$DrawColor("IndianRed")
+$DrawColor("Indigo")
+$DrawColor("Ivory")
+$DrawColor("Khaki")
+$DrawColor("Lavender")
+$DrawColor("LavenderBlush")
+$DrawColor("LawnGreen")
+$DrawColor("LemonChiffon")
+$DrawColor("LightBlue")
+$DrawColor("LightCoral")
+$DrawColor("LightCyan")
+$DrawColor("LightGoldenRodYellow")
+$DrawColor("LightGray")
+$DrawColor("LightGreen")
+$DrawColor("LightGrey")
+$DrawColor("LightPink")
+$DrawColor("LightSalmon")
+$DrawColor("LightSeaGreen")
+$DrawColor("LightSkyBlue")
+$DrawColor("LightSlateGray")
+$DrawColor("LightSlateGrey")
+$DrawColor("LightSteelBlue")
+$DrawColor("LightYellow")
+$DrawColor("Lime")
+$DrawColor("LimeGreen")
+$DrawColor("Linen")
+$DrawColor("MOTIVATION")
+$DrawColor("Magenta")
+$DrawColor("Maroon")
+$DrawColor("MediumAquaMarine")
+$DrawColor("MediumBlue")
+$DrawColor("MediumOrchid")
+$DrawColor("MediumPurple")
+$DrawColor("MediumSeaGreen")
+$DrawColor("MediumSlateBlue")
+$DrawColor("MediumSpringGreen")
+$DrawColor("MediumTurquoise")
+$DrawColor("MediumVioletRed")
+$DrawColor("MidnightBlue")
+$DrawColor("MintCream")
+$DrawColor("MistyRose")
+$DrawColor("Moccasin")
+$DrawColor("NavajoWhite")
+$DrawColor("Navy")
+$DrawColor("OldLace")
+$DrawColor("Olive")
+$DrawColor("OliveDrab")
+$DrawColor("Orange")
+$DrawColor("OrangeRed")
+$DrawColor("Orchid")
+$DrawColor("PHYSICAL")
+$DrawColor("PaleGoldenRod")
+$DrawColor("PaleGreen")
+$DrawColor("PaleTurquoise")
+$DrawColor("PaleVioletRed")
+$DrawColor("PapayaWhip")
+$DrawColor("PeachPuff")
+$DrawColor("Peru")
+$DrawColor("Pink")
+$DrawColor("Plum")
+$DrawColor("PowderBlue")
+$DrawColor("Purple")
+$DrawColor("Red")
+$DrawColor("RosyBrown")
+$DrawColor("RoyalBlue")
+$DrawColor("STRATEGY")
+$DrawColor("SaddleBrown")
+$DrawColor("Salmon")
+$DrawColor("SandyBrown")
+$DrawColor("SeaGreen")
+$DrawColor("SeaShell")
+$DrawColor("Sienna")
+$DrawColor("Silver")
+$DrawColor("SkyBlue")
+$DrawColor("SlateBlue")
+$DrawColor("SlateGray")
+$DrawColor("SlateGrey")
+$DrawColor("Snow")
+$DrawColor("SpringGreen")
+$DrawColor("SteelBlue")
+$DrawColor("TECHNOLOGY")
+$DrawColor("Tan")
+$DrawColor("Teal")
+$DrawColor("Thistle")
+$DrawColor("Tomato")
+$DrawColor("Turquoise")
+$DrawColor("Violet")
+$DrawColor("Wheat")
+$DrawColor("White")
+$DrawColor("WhiteSmoke")
+$DrawColor("Yellow")
+$DrawColor("YellowGreen")
+
+}
+@enduml
+
+
+
+```
+
+
+
+
+
+### Colors keyword
+
+> [<img src="../res/play.png" width="40" alt="playbuttoncolor1" />](http://www.plantuml.com/plantuml/uml/SoWkIImgAStDuKhEpyalAkPoICrB0N81)
+> Press to play around with this diagram source online.
+
+```
+@startuml
+colors
+@enduml
+
+```

@@ -1,0 +1,11 @@
+@startuml
+!define GCPPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-icons-GCP/master/dist
+!include GCPPuml/GCPCommon.puml
+
+!include GCPPuml/AI_and_Machine_Learning/all.puml
+!include GCPPuml/API_Management/all.puml
+!include GCPPuml/Compute/all.puml
+!include GCPPuml/Databases/all.puml
+
+listsprites
+@enduml

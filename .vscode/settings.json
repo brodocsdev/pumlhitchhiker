@@ -1,0 +1,58 @@
+{
+    "explorerSort.rules": [
+        {
+            "name": "Auto-generated for **/*",
+            "pathPattern": "**/*",
+            "priorities": [
+                {
+                    "condition": "name === 'Introduction'",
+                    "priority": 100,
+                    "referenceFile": "Annex",
+                    "offset": 0
+                },
+                {
+                    "condition": "name === 'Using standard library'",
+                    "priority": 90,
+                    "referenceFile": "Introduction",
+                    "offset": -1
+                },
+                {
+                    "condition": "name === 'PlantUML features'",
+                    "priority": 80,
+                    "referenceFile": "Using standard library",
+                    "offset": -1
+                },
+                {
+                    "condition": "name === 'Understanding standard library'",
+                    "priority": 70,
+                    "referenceFile": "Standardising standard library",
+                    "offset": -1
+                },
+                {
+                    "condition": "name === 'Standardising standard library'",
+                    "priority": 60,
+                    "referenceFile": "Using standard library",
+                    "offset": -1
+                },
+                {
+                    "condition": "name === 'Future'",
+                    "priority": 50,
+                    "referenceFile": "Standardising standard library",
+                    "offset": -1
+                },
+                {
+                    "condition": "name === 'Annex standard library C4'",
+                    "priority": 40,
+                    "referenceFile": "Standardising standard library",
+                    "offset": 0
+                },
+                {
+                    "condition": "name === 'Annex'",
+                    "priority": 30,
+                    "referenceFile": "Understanding standard library",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}

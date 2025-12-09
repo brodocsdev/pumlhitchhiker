@@ -1,0 +1,20 @@
+@startuml
+
+skinparam nodesep 5
+'skinparam ranksep 20
+
+rectangle Arrows
+rectangle A
+rectangle B
+rectangle C
+rectangle D
+rectangle E
+rectangle F
+
+Arrows -[bold]-> A 
+Arrows -[#pink,dashed,thickness=10]-> B
+Arrows -[#4567ff,dotted]-> C
+Arrows --> D
+E ---> C
+
+@enduml
