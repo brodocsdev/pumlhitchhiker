@@ -2,7 +2,7 @@
 
 
 See published version with [brodocs.io](https://brodocs.io/975abcb773619a787f7/pumlhitchhiker/README.html)  
-Repo: todo
+Source [repo](https://github.com/brodocsdev/pumlhitchhiker)
 
 
 This is remake of great work stored [here](https://github.com/Crashedmind/PlayingWithPlantUMLSource) in reStructuredText and published [here](https://crashedmind.github.io/PlantUMLHitchhikersGuide/). Files have been converted to Markdown format, which seems to have gained more popularity over the years, with no additional tags related to some specific static site generator, so that one can have good user experience when working on technical docs in editor. This is initial version, the work is still ongoing.
